@@ -1,0 +1,35 @@
+server:
+  port: 8080
+#  context-path: /User
+
+#girl:
+#  cupSize: B
+#  age: 18
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/cmall
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+#2017-08-13 21:04:44.739 ERROR 32536 --- [  restartedMain] org.hibernate.tool.hbm2ddl.SchemaExport  :
+# HHH000389: Unsuccessful: create table cmall_user (id integer not null auto_increment, answer varchar(255),
+#  create_time datetime not null, email varchar(255), money NOT NULL DEFAULT 0, password varchar(255) not null,
+#   phone varchar(255), question varchar(255), role integer not null, update_time datetime not null,
+#   username varchar(255) not null, primary key (id))
+
+
+
+#content: "cupSize: ${cupSize},age: ${age}"
+#prot: 后加空格
+#server.port=8080
+#server.context-path=/Girl
+
+#spring.datasource.url=jdbc:mysql://127.0.0.1:3306/
+#spring.datasource.username=admin
+#spring.datasource.password=123456
+#spring.datasource.driver-class-name=com.mysql.jdbc.Driver
